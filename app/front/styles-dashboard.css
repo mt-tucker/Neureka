@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F4F4F9;
+    display: flex;
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la pantalla */
+}
+  
+.dashboard {
+    display: flex;
+    width: 100%; /* Asegura que el dashboard ocupe todo el ancho */
+    height: 100%; /* Asegura que el dashboard ocupe toda la altura */
+}
+  
+.user-section, .challenges-section, .log-section {
+    height: 100%; /* Cada sección ocupa el 100% de la altura */
+}
+  
+.user-section {
+    width: 20%; /* Sección de usuario */
+    background-color: #fff;
+    padding: 20px;
+}
+  
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: 950;
+    color: #1B3084FF;
+    text-decoration: none;
+}
+  
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px 0; /* Espaciado vertical */
+}
+  
+.username {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+  
+.btn-progress, .btn-expand-calendar, .btn-start {
+    background-color: #1B3084FF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+  
+.options {
+    margin-top: 20px;
+}
+  
+.option {
+    margin: 5px 0;
+    cursor: pointer;
+}
+  
+.challenges-section {
+    flex: 1; /* Sección de retos ocupará el espacio restante */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+  
+.log-section {
+    width: 20%; /* Sección de bitácora */
+    background-color: #fff;
+    padding: 20px;
+}
+  
+.fire, .gear {
+    display: flex;
+    align-items: center;
+}
+  
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+  
+.log-title {
+    font-size: 24px;
+    margin: 20px 0;
+}
+  
+.log-entry {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+  
+.divider {
+    border: 0;
+    border-top: 1px solid #929292;
+    margin: 20px 0; /* Espaciado alrededor de la línea */
+}

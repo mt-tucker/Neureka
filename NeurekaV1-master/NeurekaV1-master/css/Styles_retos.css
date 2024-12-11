@@ -1,0 +1,91 @@
+h1{
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+/*Este selector ya no es necesario, pues la estrella ya esta ubicada como fluid*/
+.Estrella{
+    display: flex;
+    position: absolute;
+    margin-left: 30vw;
+    width: auto;
+    height: 80vh;
+  }
+  /*Este tampoco es necesario ya que con los id's ya logramos posicionar el texto con la 
+  estrella*/
+  .inicia{
+    position:relative;
+    top: -40vh;
+    left: -3vh;
+  }
+
+.link{
+    text-align: left;
+  }
+.menu-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+  }
+
+.Cuborubric{
+    width:55px;
+    height: 55px;
+  
+  }  
+.Cubo{
+  display: inline-block;
+  padding: 10px;
+}
+/*Agregue este selector que dice que todos los h5 de la clase Cubo van a ser amarillos (por 
+eso Neureka ya esta amarillo*/
+.Cubo h5{
+  color: yellow;
+  font-size: x-large;
+}
+/*El id parent va ligado al div donde esta la estrella y el texto, se le da una posicion
+relativa para que no afecte la estructura de la pagina*/
+#parent{
+  position: relative;
+  display: inline-block;
+}
+/*Este id va a permitir que el texto tome como base el id padre para ubicarse. Si la estrella
+se mueve, el texto tambien se movera, los porcentajes son para que tome la medida de la 
+pantalla, no importa cual sea.*/
+#star{
+  position: absolute;
+  top: 40%;
+  left: 35%;
+}
+/*Realizo el selector footer para que el footer no se mueva del final de la pagina y se
+quede en la parte de abajo*/
+footer {
+  position: absolute;
+  bottom: 0;
+}
+.below_menu{
+  display: inline-block;
+  padding: 5px;
+}
+.challenge_name{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+  'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+}
+.helmet{
+    width: 5vw;
+    height: auto;
+}
+.helmet:hover{
+    transform: scale(1.5);
+}
+.config{
+
+}
+.config:hover{
+    transform: scale(1.5);
+}
+a:hover{
+  transform: scale(1.5);
+}

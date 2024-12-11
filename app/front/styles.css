@@ -1,0 +1,202 @@
+/* Estructura básica de la página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Aplicar una fuente global */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F4F4F9;
+}
+
+/* Transición para el fondo de la página */
+.page-transition {
+    transition: background-color 0.5s ease;
+}
+
+/* Clase para el efecto de desvanecimiento */
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Página de login */
+.login-page {
+    background-color: #333;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.login-page.visible {
+    opacity: 1;
+}
+
+/* Contenedor principal del encabezado */
+.header {
+    width: 100%;
+    padding: 5px 20px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo de Neureka */
+.logo {
+    font-size: 36px;
+    font-weight: 950;
+    color: #1B3084FF;
+    text-decoration: none;
+}
+
+/* Contenedor para los botones */
+.button-container {
+    display: flex;
+    gap: 15px;
+}
+
+/* Botones generales */
+.btn-signup,
+.btn-login {
+    padding: 9px 12px;
+    font-size: 15px;
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.btn-signup {
+    color: #FFFFFF;
+    background-color: #1B3084FF;
+}
+
+.btn-signup:hover {
+    background-color: #101D4FFF;
+}
+
+.btn-signup:active {
+    background-color: #0D163EFF;
+}
+
+.btn-login {
+    color: #021526FF;
+    background-color: #fdce03;
+}
+
+.btn-login:hover {
+    background-color: #d1ae10;
+}
+
+.btn-login:active {
+    background-color: #9B7F02FF;
+}
+
+/* Botón "Inicia ahora" */
+.btn-main {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #1B3084FF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-main:hover {
+    background-color: #0D163EFF;
+}
+
+/* Títulos */
+.main-title {
+    font-size: 29px;
+    color: #1B3084FF;
+    font-weight: 700;
+}
+
+/* Subtítulo */
+.sub-title {
+    font-size: 32px;
+    color: #FDCE03FF;
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+/* Línea separadora */
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.separator .line {
+    width: 100px;
+    height: 1px;
+    background-color: #D1D1D1;
+    margin: 0 15px;
+}
+
+.separator-text {
+    font-size: 16px;
+    color: #777;
+    font-weight: bold;
+}
+
+/* Contenedor principal del contenido */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh; /* Asegura que el contenido esté centrado verticalmente */
+    padding: 0 20px; /* Espaciado para pantallas pequeñas */
+}
+
+/* Contenedor de login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Cuadro de login */
+.login-box {
+    background-color: #ffffff;
+    color: #000;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    transform: translateX(100%);
+    transition: transform 1s ease;
+}
+
+.login-page.visible .login-box {
+    transform: translateX(0);
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 28px;
+    }
+
+    .btn-login, .btn-signup {
+        font-size: 14px;
+    }
+
+    .main-title {
+        font-size: 24px;
+    }
+
+    .sub-title {
+        font-size: 20px;
+    }
+}
+
